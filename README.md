@@ -82,7 +82,7 @@ LG유플러스 유레카 종합프로젝트입니다. 배달 서비스에서 매
 - Docker Compose 인프라와 Prometheus · Grafana · exporter 관측 환경 구축
 
 <details>
-<summary><b>동시성 제어 단계 보기</b></summary>
+<summary><b>동시성 제어 버전 비교 보기</b></summary>
 <br/>
 
 | 단계 | 방식 | 결과 |
