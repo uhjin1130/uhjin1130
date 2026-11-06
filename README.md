@@ -10,11 +10,6 @@
 
 **한 번의 성공에 안심하지 않고,<br/>믿을 수 있을 때까지 검증하는 백엔드 개발자입니다.**
 
-Java · Spring Boot 기반으로 대규모 트래픽 처리와<br/>
-RAG 검색 기반 LLM 챗봇 서비스를 팀장으로서 이끌었습니다.
-
-<br/>
-
 <a href="https://github.com/uhjin1130" title="GitHub"><img src="https://skillicons.dev/icons?i=github" width="40" alt="GitHub"/></a>  <a href="mailto:rladjwls1130@naver.com" title="rladjwls1130@naver.com"><img src="./assets/mail.svg" width="40" alt="Email"/></a>
 
 </div>
