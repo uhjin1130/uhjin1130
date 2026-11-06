@@ -15,8 +15,7 @@ RAG 검색 기반 LLM 챗봇 서비스를 팀장으로서 이끌었습니다.
 
 <br/>
 
-<a href="mailto:rladjwls1130@naver.com"><img src="https://img.shields.io/badge/rladjwls1130@naver.com-1E3A5F?style=for-the-badge&logo=maildotru&logoColor=white"/></a>
-<a href="https://github.com/uhjin1130"><img src="https://img.shields.io/badge/uhjin1130-1E3A5F?style=for-the-badge&logo=github&logoColor=white"/></a>
+<a href="https://github.com/uhjin1130" title="GitHub"><img src="https://skillicons.dev/icons?i=github" width="40" alt="GitHub"/></a>  <a href="mailto:rladjwls1130@naver.com" title="rladjwls1130@naver.com"><img src="./assets/mail.svg" width="40" alt="Email"/></a>
 
 </div>
 
@@ -99,7 +98,14 @@ LG유플러스 유레카 종합프로젝트입니다. 배달 서비스에서 매
 
 </details>
 
-`Java 21` `Spring Boot` `JPA` `MySQL 8` `Redis 7` `k6` `Docker` `Prometheus` `Grafana`
+<img src="https://img.shields.io/badge/Java_21-007396?style=flat-square&logo=openjdk&logoColor=white"/><img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
+<img src="https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=flat-square&logo=spring&logoColor=white"/>
+<img src="https://img.shields.io/badge/MySQL_8-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
+<img src="https://img.shields.io/badge/Redis_7-DC382D?style=flat-square&logo=redis&logoColor=white"/>
+<img src="https://img.shields.io/badge/k6-7D64FF?style=flat-square&logo=k6&logoColor=white"/>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
+<img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white"/>
+<img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white"/>
 
 <br/>
 
@@ -115,7 +121,13 @@ LG유플러스 유레카 종합프로젝트입니다. 배달 서비스에서 매
 - temperature별 환각 비율을 **750건 이상 응답으로 측정**해 프롬프트 규칙 보완의 근거 마련
 - Docker Compose dev / prod 분리, GitHub Actions 자동 배포, EC2 · RDS · Nginx HTTPS 구성
 
-`Java 21` `Spring Boot 3` `Spring AI` `PostgreSQL + pgvector` `AWS Bedrock` `Docker` `AWS EC2` `RDS`
+<img src="https://img.shields.io/badge/Java_21-007396?style=flat-square&logo=openjdk&logoColor=white"/><img src="https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
+<img src="https://img.shields.io/badge/Spring_AI-6DB33F?style=flat-square&logo=spring&logoColor=white"/>
+<img src="https://img.shields.io/badge/PostgreSQL_+_pgvector-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
+<img src="https://img.shields.io/badge/AWS_Bedrock-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white"/>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
+<img src="https://img.shields.io/badge/AWS_EC2-FF9900?style=flat-square&logo=amazonec2&logoColor=white"/>
+<img src="https://img.shields.io/badge/AWS_RDS-527FFF?style=flat-square&logo=amazonrds&logoColor=white"/>
 
 <br/>
 
@@ -129,7 +141,9 @@ LG유플러스 유레카 종합프로젝트입니다. 배달 서비스에서 매
 - Kakao Map API 기반 주변 병원 · 약국 지도 검색 화면 구현
 - OpenAI API를 활용해 증상을 입력하면 적합한 병원을 추천하는 유사도 검색 엔진 구현
 
-`React` `JavaScript` `Kakao Map API` `OpenAI API`
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
+<img src="https://img.shields.io/badge/Kakao_Map_API-FFCD00?style=flat-square&logo=kakao&logoColor=black"/>
+<img src="https://img.shields.io/badge/OpenAI_API-412991?style=flat-square&logo=openai&logoColor=white"/>
 
 <br/>
 
@@ -148,8 +162,6 @@ LG유플러스 유레카 종합프로젝트입니다. 배달 서비스에서 매
 </picture>
 
 <br/><br/>
-
-<img src="https://visitor-badge.laobi.icu/badge?page_id=uhjin1130.uhjin1130&left_text=Visitors&left_color=%231E3A5F&right_color=%236DB33F" />
 
 </div>
 
