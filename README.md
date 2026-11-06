@@ -96,6 +96,7 @@ LG유플러스 유레카 종합프로젝트입니다. 배달 서비스에서 매
 
 </details>
 <p>
+<b>Backend</b><br/>
 <img src="https://img.shields.io/badge/Java_21-007396?style=flat-square&logo=openjdk&logoColor=white"/>
 <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
 <img src="https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=flat-square&logo=spring&logoColor=white"/>
@@ -105,6 +106,11 @@ LG유플러스 유레카 종합프로젝트입니다. 배달 서비스에서 매
 <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
 <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white"/>
 <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white"/>
+</p>
+<p>
+<b>Frontend</b><br/>
+<img src="https://img.shields.io/badge/React_19-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+<img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white"/>
 </p>
 <br/>
 
@@ -120,15 +126,69 @@ LG유플러스 유레카 종합프로젝트입니다. 배달 서비스에서 매
 - temperature별 환각 비율을 **750건 이상 응답으로 측정**해 프롬프트 규칙 보완의 근거 마련
 - Docker Compose dev / prod 분리, GitHub Actions 자동 배포, EC2 · RDS · Nginx HTTPS 구성
 
+<details>
+<summary><b>검색 품질 평가 결과 보기</b></summary>
+<br/>
+
+**① 비교한 검색 방식 8가지** (같은 코드 · DB · 정답지, Recall@10 · nDCG@10 · MRR · Hit@1)
+
+| | 방식 | 설명 | 결과 |
+|:---:|---|---|---|
+| A | 원문 검색 | 사용자 질문을 그대로 임베딩해 벡터 검색 | 기준선 |
+| B | 영어 번역 | 질문을 영어로 번역한 뒤 검색 | A와 같거나 낮음 → **폐기** |
+| C | 질문 변환 | LLM이 구어체 질문을 검색용 질의로 변환 | 단일 질문은 A와 비슷, 복합 질문은 A보다 낮음 → **질문 분해로 개선 후 채택** |
+| D | 변환 후 번역 | C로 변환한 질의를 영어로 번역 | 개선 없음 → **폐기** |
+| A~D + H | BM25 Hybrid | 각 방식에 키워드 검색(BM25)을 결합 | 가장 높았지만 +1%p 안팎으로 차이가 불확실, RDS에서 필요한 확장(pg_search) 사용 불가 → **미도입** |
+
+변환 결과를 저장해 두고 재사용해서, "변환을 바꾼 실험"과 "검색 방식만 바꾼 실험"이 섞이지 않도록 분리했습니다.
+
+**② 질문 분해 적용 전후 비교** (지표 nDCG@10, 괄호는 95% 신뢰구간)
+
+| 평가 | 문항 수 | 원문 검색 | 질문 분해 적용 | 차이 |
+|---|:---:|:---:|:---:|:---:|
+| FAQ 복합 질문 | 500 | 91.7% | **94.3%** | **+2.6%p** (+1.5 ~ +3.8) |
+| FAQ 단일 질문 (회귀 확인) | 200 | 91.6% | 93.5% | +1.9%p (−0.5 ~ +4.5) |
+
+- 분해 기능만 끄면 원문 검색과 차이가 없고(+0.7%p), 켜면 +3.7%p가 더해져 **개선 원인이 질문 분해임을 분리 확인**
+- 요금제가 아닌 질문에 요금제가 함께 검색되는 비율 **59% → 15%**
+- 대가: 복합 질문 응답 시간 +744ms. 단일 질문 성능은 떨어지지 않음
+
+**③ temperature별 환각 비율** (사람이 직접 판정, 750건 이상 응답)
+
+| temperature | 0.0 | 0.3 ~ 0.7 | 1.0 |
+|:---:|:---:|:---:|:---:|
+| 환각 + 경미한 오류 | **6.7%** | 7.8% | 11.1% |
+
+temperature로는 오답이 크게 줄지 않아, 남은 오답은 프롬프트 문제로 판단하고 "근거 없는 이유 만들기 금지" 규칙을 추가했습니다.
+
+<sub>※ 평가 질문과 정답은 LLM으로 생성했고, 답변 생성 품질이 아닌 검색 단계까지만 평가했습니다.</sub>
+
+</details>
+
 <p>
+<b>Backend</b><br/>
 <img src="https://img.shields.io/badge/Java_21-007396?style=flat-square&logo=openjdk&logoColor=white"/>
 <img src="https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
 <img src="https://img.shields.io/badge/Spring_AI-6DB33F?style=flat-square&logo=spring&logoColor=white"/>
+<img src="https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white"/>
 <img src="https://img.shields.io/badge/PostgreSQL_+_pgvector-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
 <img src="https://img.shields.io/badge/AWS_Bedrock-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white"/>
 <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
 <img src="https://img.shields.io/badge/AWS_EC2-FF9900?style=flat-square&logo=amazonec2&logoColor=white"/>
 <img src="https://img.shields.io/badge/AWS_RDS-527FFF?style=flat-square&logo=amazonrds&logoColor=white"/>
+<img src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white"/>
+<img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white"/>
+</p>
+<p>
+<b>Frontend</b><br/>
+<img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
+<img src="https://img.shields.io/badge/React_19-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
+<img src="https://img.shields.io/badge/TanStack_Query-FF4154?style=flat-square&logo=reactquery&logoColor=white"/>
+<img src="https://img.shields.io/badge/Zustand-443E38?style=flat-square"/>
+<img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white"/>
+<img src="https://img.shields.io/badge/Kakao_Maps_SDK-FFCD00?style=flat-square&logo=kakao&logoColor=black"/>
+<img src="https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white"/>
 </p>
 <br/>
 
@@ -143,8 +203,22 @@ LG유플러스 유레카 종합프로젝트입니다. 배달 서비스에서 매
 - OpenAI API를 활용해 증상을 입력하면 적합한 병원을 추천하는 유사도 검색 엔진 구현
   
 <p>
-<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+<b>Backend</b><br/>
+<img src="https://img.shields.io/badge/Java_21-007396?style=flat-square&logo=openjdk&logoColor=white"/>
+<img src="https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
+<img src="https://img.shields.io/badge/Spring_Cloud_Gateway-6DB33F?style=flat-square&logo=spring&logoColor=white"/>
+<img src="https://img.shields.io/badge/Spring_Security_+_JWT-6DB33F?style=flat-square&logo=springsecurity&logoColor=white"/>
+<img src="https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=flat-square&logo=spring&logoColor=white"/>
+<img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
+<img src="https://img.shields.io/badge/AWS_EC2-FF9900?style=flat-square&logo=amazonec2&logoColor=white"/>
+<img src="https://img.shields.io/badge/AWS_RDS-527FFF?style=flat-square&logo=amazonrds&logoColor=white"/>
+<img src="https://img.shields.io/badge/CloudFront-8C4FFF?style=flat-square&logo=amazonwebservices&logoColor=white"/>
+</p>
+<p>
+<b>Frontend</b><br/>
+<img src="https://img.shields.io/badge/React_18-61DAFB?style=flat-square&logo=react&logoColor=black"/>
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
+<img src="https://img.shields.io/badge/styled--components-DB7093?style=flat-square&logo=styledcomponents&logoColor=white"/>
 <img src="https://img.shields.io/badge/Kakao_Map_API-FFCD00?style=flat-square&logo=kakao&logoColor=black"/>
 <img src="https://img.shields.io/badge/OpenAI_API-412991?style=flat-square&logo=openai&logoColor=white"/>
 </p>
@@ -154,7 +228,7 @@ LG유플러스 유레카 종합프로젝트입니다. 배달 서비스에서 매
 
 <div align="center">
 
-<img height="165" src="https://streak-stats.demolab.com?user=uhjin1130&theme=github-dark-blue&hide_border=true&ring=6DB33F&fire=6DB33F&currStreakLabel=6DB33F" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=uhjin1130&theme=github_dark" />
 
 <br/><br/>
 
