@@ -8,9 +8,11 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3500&pause=1000&color=6DB33F&center=true&vCenter=true&width=520&lines=Java+%26+Spring+Boot+Backend+Developer;Concurrency+%26+Data+Integrity;RAG+Search+Evaluation;Verify+Until+It's+Trustworthy" alt="Typing SVG" />
 </a>
 
-**한 번의 성공에 안심하지 않고,<br/>믿을 수 있을 때까지 검증하는 백엔드 개발자입니다.**
+**한 번의 성공에 안심하지 않고, 믿을 수 있을 때까지 검증하는 백엔드 개발자입니다.**
 
-<a href="https://github.com/uhjin1130" title="GitHub"><img src="https://skillicons.dev/icons?i=github" width="40" alt="GitHub"/></a>  <a href="mailto:rladjwls1130@naver.com" title="rladjwls1130@naver.com"><img src="./assets/mail.svg" width="40" alt="Email"/></a>
+<br/>
+
+<a href="https://github.com/uhjin1130" title="GitHub"><img src="https://skillicons.dev/icons?i=github" width="40" alt="GitHub"/></a>&nbsp;&nbsp;<a href="mailto:rladjwls1130@naver.com" title="rladjwls1130@naver.com"><img src="./assets/mail.svg" width="40" alt="Email"/></a>
 
 </div>
 
@@ -22,6 +24,7 @@
   <tr><td>🎓 <b>학력</b></td><td>한성대학교 컴퓨터공학과 (2020.03 – 2026.02)</td></tr>
   <tr><td>📚 <b>교육</b></td><td>LG유플러스 유레카 백엔드 개발자 과정 (2026.04 – 2026.10 · 1,080시간)</td></tr>
   <tr><td>📜 <b>자격증</b></td><td>정보처리기사 (2026.09) · SQL 개발자 SQLD (2026.06)</td></tr>
+  <tr><td>🏆 <b>수상</b></td><td>LG유플러스 유레카 종합프로젝트 경진대회 <b>최우수상</b> (2026.09 · Mealiver-IT)</td></tr>
 </table>
 
 <br/>
@@ -69,7 +72,7 @@
 
 ### 🎟 Mealiver-IT · 선착순 쿠폰 발급 시스템
 
-> **2026.08.06 – 2026.08.31** · 팀장 · 6인 · 발급 로직 · 인프라<br/>
+> **2026.08.06 – 2026.08.31** · 팀장 · 6인 · 발급 로직 · 인프라 · 🏆 **종합프로젝트 경진대회 최우수상**<br/>
 > 🔗 [github.com/Mealiver-IT/Mealiver-IT-BE](https://github.com/Mealiver-IT/Mealiver-IT-BE)
 
 LG유플러스 유레카 종합프로젝트입니다. 배달 서비스에서 매일 오전 11시 정각에 여는 오픈런 할인쿠폰 시나리오로 구체화한 대규모 트래픽 선착순 쿠폰 발급 시스템입니다.
@@ -92,8 +95,9 @@ LG유플러스 유레카 종합프로젝트입니다. 배달 서비스에서 매
 재고 판단의 최종 주체는 항상 DB이고, Redis는 사전 필터로만 사용해 Redis 장애 시에도 초과 발급이 생기지 않도록 설계했습니다.
 
 </details>
-
-<img src="https://img.shields.io/badge/Java_21-007396?style=flat-square&logo=openjdk&logoColor=white"/><img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
+<p>
+<img src="https://img.shields.io/badge/Java_21-007396?style=flat-square&logo=openjdk&logoColor=white"/>
+<img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
 <img src="https://img.shields.io/badge/Spring_Data_JPA-6DB33F?style=flat-square&logo=spring&logoColor=white"/>
 <img src="https://img.shields.io/badge/MySQL_8-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
 <img src="https://img.shields.io/badge/Redis_7-DC382D?style=flat-square&logo=redis&logoColor=white"/>
@@ -101,7 +105,7 @@ LG유플러스 유레카 종합프로젝트입니다. 배달 서비스에서 매
 <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
 <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white"/>
 <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white"/>
-
+</p>
 <br/>
 
 ### 🤖 VITA · RAG 기반 AI 상담 서비스
@@ -116,14 +120,16 @@ LG유플러스 유레카 종합프로젝트입니다. 배달 서비스에서 매
 - temperature별 환각 비율을 **750건 이상 응답으로 측정**해 프롬프트 규칙 보완의 근거 마련
 - Docker Compose dev / prod 분리, GitHub Actions 자동 배포, EC2 · RDS · Nginx HTTPS 구성
 
-<img src="https://img.shields.io/badge/Java_21-007396?style=flat-square&logo=openjdk&logoColor=white"/><img src="https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
+<p>
+<img src="https://img.shields.io/badge/Java_21-007396?style=flat-square&logo=openjdk&logoColor=white"/>
+<img src="https://img.shields.io/badge/Spring_Boot_3-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
 <img src="https://img.shields.io/badge/Spring_AI-6DB33F?style=flat-square&logo=spring&logoColor=white"/>
 <img src="https://img.shields.io/badge/PostgreSQL_+_pgvector-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
 <img src="https://img.shields.io/badge/AWS_Bedrock-232F3E?style=flat-square&logo=amazonwebservices&logoColor=white"/>
 <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
 <img src="https://img.shields.io/badge/AWS_EC2-FF9900?style=flat-square&logo=amazonec2&logoColor=white"/>
 <img src="https://img.shields.io/badge/AWS_RDS-527FFF?style=flat-square&logo=amazonrds&logoColor=white"/>
-
+</p>
 <br/>
 
 ### 🏥 길라의 빛 · 건강 커뮤니티 플랫폼
@@ -135,11 +141,13 @@ LG유플러스 유레카 종합프로젝트입니다. 배달 서비스에서 매
 
 - Kakao Map API 기반 주변 병원 · 약국 지도 검색 화면 구현
 - OpenAI API를 활용해 증상을 입력하면 적합한 병원을 추천하는 유사도 검색 엔진 구현
-
-<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
+  
+<p>
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black"/>
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
 <img src="https://img.shields.io/badge/Kakao_Map_API-FFCD00?style=flat-square&logo=kakao&logoColor=black"/>
 <img src="https://img.shields.io/badge/OpenAI_API-412991?style=flat-square&logo=openai&logoColor=white"/>
-
+</p>
 <br/>
 
 ## 📊 GitHub Stats
@@ -157,6 +165,8 @@ LG유플러스 유레카 종합프로젝트입니다. 배달 서비스에서 매
 </picture>
 
 <br/><br/>
+
+<img src="https://visitor-badge.laobi.icu/badge?page_id=uhjin1130.uhjin1130&left_text=Visitors&left_color=%231E3A5F&right_color=%236DB33F" />
 
 </div>
 
