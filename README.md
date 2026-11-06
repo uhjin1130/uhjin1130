@@ -10,13 +10,11 @@
 
 **한 번의 성공에 안심하지 않고,<br/>믿을 수 있을 때까지 검증하는 백엔드 개발자입니다.**
 
-Java · Spring Boot 기반으로 대규모 트래픽 처리와<br/>
-RAG 검색 기반 LLM 챗봇 서비스를 팀장으로서 이끌었습니다.
-
 <br/>
 
 <a href="mailto:rladjwls1130@naver.com"><img src="https://img.shields.io/badge/Email-rladjwls1130@naver.com-03C75A?style=flat-square&logo=naver&logoColor=white"/></a>
 <a href="https://github.com/uhjin1130"><img src="https://img.shields.io/badge/GitHub-uhjin1130-181717?style=flat-square&logo=github&logoColor=white"/></a>
+<img src="https://visitor-badge.laobi.icu/badge?page_id=uhjin1130.uhjin1130&left_text=Visitors&left_color=%23555555&right_color=%236DB33F" />
 
 </div>
 
@@ -24,6 +22,7 @@ RAG 검색 기반 LLM 챗봇 서비스를 팀장으로서 이끌었습니다.
 
 ## 👤 About
 
+| | |
 |---|---|
 | 🎓 **학력** | 한성대학교 컴퓨터공학과 (2020.03 – 2026.02) |
 | 📚 **교육** | LG유플러스 유레카 백엔드 개발자 과정 (2026.04 – 2026.10 · 1,080시간) |
@@ -92,7 +91,7 @@ LG유플러스 유레카 종합프로젝트입니다. 배달 서비스에서 매
 | V1 | 제어 없음 (대조군) | 초과 발급 발생 확인 |
 | V2 | DB 락 → 원자적 UPDATE | 정확하지만 재고 row 1개에 요청이 직렬화되어 커넥션 풀 고갈 |
 | V3 | + Redis 재고 스냅샷 사전 필터 | 품절 이후 트래픽만 차단, 재고가 남은 동안의 경합은 그대로 |
-| **V4** | **재고 샤딩 (캠페인당 50개 row)** | **최종 테스트 모두 10,000건 정확 발급** |
+| **V4** | **재고 샤딩 (캠페인당 50개 row)** | **최종 시험 2회 모두 10,000건 정확 발급** |
 
 재고 판단의 최종 주체는 항상 DB이고, Redis는 사전 필터로만 사용해 Redis 장애 시에도 초과 발급이 생기지 않도록 설계했습니다.
 
@@ -136,7 +135,6 @@ LG유플러스 유레카 종합프로젝트입니다. 배달 서비스에서 매
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=uhjin1130&show_icons=true&theme=github_dark&hide_border=true&count_private=true&title_color=6DB33F&icon_color=6DB33F" />
 <img height="165" src="https://streak-stats.demolab.com?user=uhjin1130&theme=github-dark-blue&hide_border=true&ring=6DB33F&fire=6DB33F&currStreakLabel=6DB33F" />
 
 <br/><br/>
