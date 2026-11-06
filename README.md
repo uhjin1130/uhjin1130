@@ -228,7 +228,10 @@ temperature로는 오답이 크게 줄지 않아, 남은 오답은 프롬프트 
 
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=uhjin1130&theme=github_dark" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=uhjin1130&theme=github_dark" width="98%" />
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=uhjin1130&theme=github_dark" width="49%" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=uhjin1130&theme=github_dark" width="49%" />
 
 <br/><br/>
 
