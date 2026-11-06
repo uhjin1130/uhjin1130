@@ -164,9 +164,7 @@ LG유플러스 유레카 종합프로젝트입니다. 배달 서비스에서 매
   <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/uhjin1130/uhjin1130/output/pacman-contribution-graph.svg">
 </picture>
 
-<br/><br/>
-
-<img src="https://visitor-badge.laobi.icu/badge?page_id=uhjin1130.uhjin1130&left_text=Visitors&left_color=%231E3A5F&right_color=%236DB33F" />
+<br/>
 
 </div>
 
