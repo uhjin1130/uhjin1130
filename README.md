@@ -10,11 +10,13 @@
 
 **한 번의 성공에 안심하지 않고,<br/>믿을 수 있을 때까지 검증하는 백엔드 개발자입니다.**
 
+Java · Spring Boot 기반으로 대규모 트래픽 처리와<br/>
+RAG 검색 기반 LLM 챗봇 서비스를 팀장으로서 이끌었습니다.
+
 <br/>
 
-<a href="mailto:rladjwls1130@naver.com"><img src="https://img.shields.io/badge/Email-rladjwls1130@naver.com-03C75A?style=flat-square&logo=naver&logoColor=white"/></a>
-<a href="https://github.com/uhjin1130"><img src="https://img.shields.io/badge/GitHub-uhjin1130-181717?style=flat-square&logo=github&logoColor=white"/></a>
-<img src="https://visitor-badge.laobi.icu/badge?page_id=uhjin1130.uhjin1130&left_text=Visitors&left_color=%23555555&right_color=%236DB33F" />
+<a href="mailto:rladjwls1130@naver.com"><img src="https://img.shields.io/badge/rladjwls1130@naver.com-1E3A5F?style=for-the-badge&logo=maildotru&logoColor=white"/></a>
+<a href="https://github.com/uhjin1130"><img src="https://img.shields.io/badge/uhjin1130-1E3A5F?style=for-the-badge&logo=github&logoColor=white"/></a>
 
 </div>
 
@@ -22,11 +24,11 @@
 
 ## 👤 About
 
-| | |
-|---|---|
-| 🎓 **학력** | 한성대학교 컴퓨터공학과 (2020.03 – 2026.02) |
-| 📚 **교육** | LG유플러스 유레카 백엔드 개발자 과정 (2026.04 – 2026.10 · 1,080시간) |
-| 📜 **자격증** | 정보처리기사 (2026.09) · SQL 개발자 SQLD (2026.06) |
+<table>
+  <tr><td>🎓 <b>학력</b></td><td>한성대학교 컴퓨터공학과 (2020.03 – 2026.02)</td></tr>
+  <tr><td>📚 <b>교육</b></td><td>LG유플러스 유레카 백엔드 개발자 과정 (2026.04 – 2026.10 · 1,080시간)</td></tr>
+  <tr><td>📜 <b>자격증</b></td><td>정보처리기사 (2026.09) · SQL 개발자 SQLD (2026.06)</td></tr>
+</table>
 
 <br/>
 
@@ -144,6 +146,10 @@ LG유플러스 유레카 종합프로젝트입니다. 배달 서비스에서 매
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/uhjin1130/uhjin1130/output/pacman-contribution-graph.svg">
   <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/uhjin1130/uhjin1130/output/pacman-contribution-graph.svg">
 </picture>
+
+<br/><br/>
+
+<img src="https://visitor-badge.laobi.icu/badge?page_id=uhjin1130.uhjin1130&left_text=Visitors&left_color=%231E3A5F&right_color=%236DB33F" />
 
 </div>
 
